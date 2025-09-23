@@ -20,7 +20,7 @@ from api.views import createUserView
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
-)
+) # prebuilt views from simplejwt package for JWT authentication 
 
 
 urlpatterns = [
@@ -29,4 +29,5 @@ urlpatterns = [
     path("api/token/",TokenObtainPairView.as_view(),name="get_token"), # JWT token route implemnted by simplejwt from api package
     path("api/token/refresh/",TokenRefreshView.as_view(),name="refresh_token"),# JWT token refresh route implemented by simplejwt from api package
     path("api-auth",include("rest_framework.urls")), # browsable API login route for testing purposes
+    path("api/",include("api.urls")), # include all routes from api app
 ]
