@@ -5,7 +5,7 @@ const api = axios.create({
     baseURL: import.meta.env.VITE_API_BASE_URL  // Vite env var (must start with VITE_)
 })
 
-/**
+/**request interceptor to handle 
  * Request interceptor — adds Authorization header when a token exists.
  */
 api.interceptors.request.use(
