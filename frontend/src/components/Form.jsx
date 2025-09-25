@@ -5,7 +5,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom"; // hooks that allows us to access the navigaation from code  
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import "../styles/Form.css"
-//import LoadingIndicator from "./LoadingIndicator";
+import LoadingIndicator from "./LoadingIndicator";
 
 function Form({ route, method }) {
     const [username, setUsername] = useState("");// state to manage username input
