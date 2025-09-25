@@ -6,5 +6,3 @@ endpoints:
     type: REST
     networkVisibility: PUBLIC
     context: /
-
-    #target: https://full-stack-django-react-project1.onrender.com
